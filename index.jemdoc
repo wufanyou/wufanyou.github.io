@@ -1,0 +1,58 @@
+# jemdoc: index.html nofooter
+
+
+\n
+= Fanyou Wu 
+
+~~~
+{}{img_left}{wu1297.jpg}{Photo}{120}{150}{}
+
+*Fanyou Wu 吴凡优* \n
+
+Graduate Research Assistant \n 
+Department of Forestry and Natural Resources \n
+Purdue University \n
+
+[wu1297@purdue.edu Email]
+[https://github.com/wufanyou Github]\n
+[https://scholar.google.com/citations?hl=en&user=C8WYCTAAAAAJ Google Scholar]\n
+
+~~~
+
+== Biography
+
+I am Fanyou Wu, currently a Ph.D. student at [https://www.purdue.edu/ Purdue University] from the [https://ag.purdue.edu/fnr/ Forestry and Natural Resources Department]. 
+Before attending Purdue, I receive my master degree from [https://www.uef.fi/en/etusivu University of Eastern Finland] (2018) 
+and bachelor degree from [http://eng.njfu.edu.cn Nanjing Forestry University] (2015) both in Wood Material Science. 
+Now my research focuses on applying machine learning to forest-related problems e.g wood identication through image recognization.
+
+Attending machine learning related competitions is my side interesting,and I have won many championships and runners-up in machine learning related competitions and top conference competation like KDD/IJCAI etc.
+*Now I am ranking 11th in [https://tianchi.aliyun.com/home/?lang=en-us Tianchi Competition Platform] held by Alibaba Company with nickname 铁球.*
+
+~~~
+I am attending Kaggle and seeking team members.
+~~~
+
+== Publication
+Wu, F., Gazo, R., Haviarova, E., & Benes, B. (2019). Wood Identification Based on Longitudinal Section Images by using Deep Learning. 
+(Submitted to computers and electronics in agriculture)
+
+Wu, F., Gazo, R., Haviarova, E., & Benes, B. (2019). Efficient Project Gradient Descent for Ensemble Adversarial Attack. 
+arXiv preprint arXiv:1906.03333. (Submitted to IJCAI 19 AIBS workshop)\n
+
+Wu, F., & Kärenlampi, P. P. (2017). Phase transition in a growing network. Journal of Complex Networks, 6(5), 788-799.
+
+== Recent Competition Prizes
+
+[https://tianchi.aliyun.com/competition/entrance/231701/information IJCAI-19 Alibaba Adversarial AI Challenge-Competition]
+- 1st in Traget Attack Track
+- 5000 USD
+- [https://github.com/wufanyou/EPGD solution]
+
+[https://dianshi.baidu.com/competition/29/rule KDD CUP 2019 Regular Machine Learning Competition Track (Regular ML Track)] 
+- 4th 
+- 1000 USD
+
+[https://jdder.joybuy.com/index/jddDetail?matchId=ee119116d65d4420bf7549df05a34f9b JDD 18 Population dynamics census and prediction] 
+- 2nd 
+- 200000 CNY
