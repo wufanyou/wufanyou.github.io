@@ -1,0 +1,86 @@
+---
+---
+
+
+
+@article{wu2021bark,
+  title={Deep BarkID - A Portable Tree Identification System by Knowledge Distillation and Network Pruning},
+  author={Wu, Fanyou and Gazo, Rado and Benes, Bedrich and Haviarova, Eva},
+  abstract = {We introduce Deep BarkID, a portable tree identification system that detects tree species from bark images. Existing bark identification systems rely heavily on access to massive computing power, which may be scarce in many locations. Our approach is deployed as a smartphone application, but it does not require any connection to a database. Its intended use in a forest, where the online connection is often unavailable. The tree identification is expressed as a bark image classification task, and it is implemented as a Convolutional Neural Network (CNN). This research focuses on developing light-weight CNN models through knowledge distillation and network pruning. We trained our network on 18,540 images of ten tree species. Overall, we achieved 96.12\% accuracy for tree species classification tasks for ten common tree species in Indiana USA on a light-weight Distilled-MoblieNet-V2. We verified the performance of \DBID~using a large dataset BarkNet. Our light-weight offline system achieved higher precision than BarkNet while using a significantly smaller neural network. We also captured and prepared thousands of bark images -a novel dataset that we call Indiana Bark Dataset- and we make it freely available at https://github.com/wufanyou/DBID},
+  journal={Under review},
+  year={2021},
+  selected={true},
+  code = {https://github.com/wufanyou/DBID},
+  abbr = {CAE}
+}
+
+@article{wu2021wood,
+  title={Wood Identification Based on Longitudinal Section Images by Using Deep Learning},
+  author={Wu, Fanyou and Gazo, Rado and Haviarova, Eva and Benes, Bedrich},
+  abstract = {Automatic species identification has the potential to improve the efficacy and automation of wood processing systems significantly. Recent advances in deep learning allowed for the automation of many previously difficult tasks, and in this paper, we investigate the feasibility of using Deep Convolutional Neural Networks (CNNs) for hardwood lumber identification. In particular, we tested two highly effective CNNs (ResNet-50 and DenseNet-121) as well as lightweight MobileNet-V2. Overall, we achieved 98.2% accuracy for 11 common hardwood species classification tasks.},
+  journal={Under review},
+  year={2021},
+  selected=true,
+  abbr = {WSAT}
+}
+
+@article{liu2021learning,
+  title={Learning to Reposition on an Online Taxi-hailing Platform},
+  author={Liu, Yang and Wu, Fanyou and Lyu, Cheng and Liu, Zhiyuan and Ye, Jiepin},
+  abstract={The vehicle dispatching system is one of the most critical problems in online taxi-hailing platforms, which requires adapting the operation and management strategy to the dynamics of demand and supply. In this paper, we propose a single-agent deep reinforcement learning approach for the vehicle repositioning problem by reallocating vacant vehicles to regions with a large demand gap in advance. The simulator and the vehicle repositioning algorithm are designed based on industrial-scale real-world data and the workflow of online taxi-hailing platforms, ensuring the practical value of our approach. Besides, the vehicle repositioning problem is translated in analogy with the load balancing problem in computers. Inspired by the recommendation system, the high concurrency of repositioning requests is addressed by sorting the actions as a recommendation list, whereby matching action with requests. Experiments demonstrate that the proposed approach is superior to the existing ones. It is also worth noting that the proposed approach won first place in the vehicle repositioning task of KDD Cup 2020.},
+  journal={Under review},
+  year={2021},
+  selected=true,
+  abbr = {KDD 1st},
+}
+
+@article{liu2021behavior2vector,
+  title={Behavior2vector: embedding users’ personalized travel behavior to vector},
+  author={Liu, Yang and Wu, Fanyou and Lyu, Cheng and Liu, Xin and Liu, Zhiyuan},
+  journal={Under review},
+  abstract = {We investigate how to effectively and efficiently embed users’ personalized travel behaviors to vectors in this paper. Based on an example scenario of multi-modal travel mode recommendation in intelligent transportation system, three data structures representing users’ travel behaviors are defined, namely heterogeneous graph of users' travel behaviors, user travel behavior k-partite graph, and personalized user travel behavior sentence. Systematic analysis on improving the language models in natural language processing (NLP) is then performed, providing intuitions for the problem of learning travel behavior representations in intelligent transportation system. In our experiments, both hand-crafted basic features and embedding vector features are used. The accuracy of machine learning models can significantly outperform three strategies in baseline models relating to classical traffic assignment models, i.e., shortest distance first, shortest estimated time of arrival (ETA) first, and lowest price first. Compared with existing embedding models like DeepWalk and Node2vec, the proposed Behavior2vector is relieved of the complex sampling process. Moreover, it reaches a higher accuracy, without requiring additional computational efforts while retaining users’ personalized travel behaviors.},
+  year={2021},
+  selected={false},
+  abbr = {IEEE TITS}
+}
+
+@article{wu2020tlab,
+  title={TLab: Traffic Map Movie Forecasting Based on HR-NET},
+  author={Wu, Fanyou and Liu, Yang and Liu, Zhiyuan and Qu, Xiaobo and Gazo, Rado and Haviarova, Eva},
+  journal={arXiv preprint arXiv:2011.07728},
+  abstract = {The problem of the effective prediction for large-scale spatio-temporal traffic data has long haunted researchers in the field of intelligent transportation. Limited by the quantity of data, citywide traffic state prediction was seldom achieved. Hence the complex urban transportation system of an entire city cannot be truly understood. Thanks to the efforts of organizations like IARAI, the massive open data provided by them has made the research possible. In our 2020 Competition solution, we further design multiple variants based on HR-NET and UNet. Through feature engineering, the hand-crafted features are input into the model in a form of channels. It is worth noting that, to learn the inherent attributes of geographical locations, we proposed a novel method called geo-embedding, which contributes to significant improvement in the accuracy of the model. In addition, we explored the influence of the selection of activation functions and optimizers, as well as tricks during model training on the model performance. In terms of prediction accuracy, our solution has won 2nd place in NeurIPS 2020, Traffic4cast Challenge.},
+  year={2020},
+  abbr = {NeurIPS 2nd},
+  arxiv = {2011.07728},
+  code = {https://github.com/wufanyou/EPGD}
+}
+
+@article{wu2019efficient,
+  title={Efficient Project Gradient Descent for Ensemble Adversarial Attack},
+  author={Wu, Fanyou and Gazo, Rado and Haviarova, Eva and Benes, Bedrich},
+  abstract = {Recent advances show that deep neural networks are not robust to deliberately crafted adversarial examples which many are generated by adding human imperceptible perturbation to clear input. Consider l2 norms attacks, Project Gradient Descent (PGD) and the Carlini and Wagner (C&W) attacks are the two main methods, where PGD control max perturbation for adversarial examples while C&W approach treats perturbation as a regularization term optimized it with loss function together. If we carefully set parameters for any individual input, both methods become similar. In general, PGD attacks perform faster but obtains larger perturbation to find adversarial examples than the C&W when fixing the parameters for all inputs. In this report, we propose an efficient modified PGD method for attacking ensemble models by automatically changing ensemble weights and step size per iteration per input. This method generates smaller perturbation adversarial examples than PGD method while remains efficient as compared to C&W method. Our method won the first place in IJCAI19 Targeted Adversarial Attack competition.},
+  journal={arXiv preprint arXiv:1906.03333},
+  arxiv = {1906.03333},
+  year={2019},
+  selected=true,
+  code = {https://github.com/wufanyou/EPGD},
+  abbr = {IJCAJ19 1st}
+}
+
+@article{wu2017,
+  author = {Wu, Fanyou and Kärenlampi, Petri P},
+  title = "{Phase transition in a growing network}",
+  journal = {Journal of Complex Networks},
+  volume = {6},
+  number = {5},
+  pages = {788-799},
+  year = {2017},
+  month = {12},
+  abstract = "{We present a probabilistic model for network growth with preferential attachment and self-attractivity. Instead of connecting to a predetermined number of existing nodes, any new node makes a finite number of attempts to connect to previous ones, any trial having a finite probability of success. We find a percolation phase transition which significantly differs from that of related models. Node degree distribution appears scale-free for large degrees, the exponent depending on system connectivity. Cluster size distribution becomes scale-free at the phase transition. Cluster diameter in percolating clusters increases logarithmically with cluster size, but becomes a power-law function at the phase transition. Counted number of boxes becomes exponentially reduced with box size, indicating non-fractal cluster geometry in the connected phase. The geometry however becomes fractal at the phase transition, with power-law exponent 2.}",
+  issn = {2051-1329},
+  doi = {10.1093/comnet/cnx058},
+  html = {https://academic.oup.com/comnet/article-pdf/6/5/788/26059061/cnx058.pdf},
+}
+
+
+
