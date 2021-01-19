@@ -9,4 +9,5 @@ group :jekyll_plugins do
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'unicode_utils'
+    gem "bibtex-ruby", ">= 5.1.0"
 end
