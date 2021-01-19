@@ -11,7 +11,7 @@ nav: true
 
 <div class="publications">
 
-<h2 class="year">2020</h2>
+<h2 class="year">Talks</h2>
 <ul>
   <li><a href="https://www.iarai.ac.at/traffic4cast/2020-competition/traffic4cast-2020-special-s<ession/">TLab: Traffic Map Movie Forecasting Based on HR-NET</a></li>
   <li style="list-style-type:none;">12/11/2020, Traffic4cast 2020 Special Session</li>
@@ -21,7 +21,7 @@ nav: true
   <li style="list-style-type:none;">10/27/2020, Reinforcement Learning Algorithm &amp; Application Virtual Seminar</li>
 </ul>
 
-<h2 class="year">2019</h2>
+<h2 class="year">Posters</h2>
 <ul>
   <li>Applying Zero Shot Learning to Wood Identification. SWST.</li>
   <li>Efficient Project Gradient Descent for Ensemble Adversarial Attack. IJCAJ 19 AIBS WORKSHOP.</li>
