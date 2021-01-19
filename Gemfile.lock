@@ -287,7 +287,7 @@ DEPENDENCIES
   jekyll-email-protect
   jekyll-github-metadata
   jekyll-paginate-v2
-  jekyll-scholar
+  jekyll-scholar (>= 5.0.0)
   jekyll-twitter-plugin
   jemoji
   unicode_utils
