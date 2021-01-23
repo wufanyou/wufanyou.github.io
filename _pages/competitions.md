@@ -12,7 +12,7 @@ nav: true
   <li><a href="https://www.iarai.ac.at/traffic4cast/competitions/traffic4cast-2020-core/?leaderboard">NeurIPS 2020 Traffic4cast Competition</a></li>
   <li style="list-style-type:none;">2nd, 5000 USD, <a href="https://github.com/wufanyou/Traffic4Cast-2020-TLab">solution</a></li>
   <li><a href="https://www.kdd.org/kdd2020/kdd-cup">KDD CUP 2020 Reinforcement Learning Competition Track (RL Track)</a> </li>
-  <li style="list-style-type:none;">1st in Reposition Track, 8000 USD, <a href="https://1drv.ms/b/s!AiK3JSLEIEcGxXhmEJIqUIw7By1Y?e=4ex6XC">solution</a></li>
+  <li style="list-style-type:none;">1st in Reposition Track, 8000 USD, <a href="/assets/pdf/kdd-cup-2020-rl-solution.pdf">solution</a></li>
 </ul>
 <h2 class="year">2019</h2>
 <ul>
