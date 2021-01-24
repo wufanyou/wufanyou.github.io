@@ -81,6 +81,9 @@
 
     <div class="links">
     {% if entry.abstract %}
+      <a class="bibtex btn btn-sm z-depth-0" role="button">bibtex</a>
+    {% endif %}
+    {% if entry.abstract %}
       <a class="abstract btn btn-sm z-depth-0" role="button">abstract</a>
     {% endif %}
     {% if entry.arxiv %}
@@ -129,6 +132,11 @@
     </div>
 
     <!-- Hidden abstract block -->
+    {% if entry.abstract %}
+    <div class="bibtex hidden">
+      <p>{{ entry.bibtex }}</p>
+    </div>
+    {% endif %}
     {% if entry.abstract %}
     <div class="abstract hidden">
       <p>{{ entry.abstract }}</p>

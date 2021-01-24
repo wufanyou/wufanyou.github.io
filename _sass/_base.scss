@@ -412,6 +412,12 @@ footer.sticky-bottom {
       div.abstract.hidden.open {
         border-color: var(--global-text-color);
       }
+      div.bibtex.hidden {
+        border: dashed 1px var(--global-bg-color);
+      }
+      div.bibtex.hidden.open {
+        border-color: var(--global-text-color);
+      }
     }
   }
 }
