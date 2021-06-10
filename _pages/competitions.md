@@ -7,6 +7,11 @@ nav: true
 ---
 
 <div class="publications">
+<h2 class="year">2021</h2>
+<ul>
+  <li><a href="https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021">CVRP 2021 The 2nd Agriculture-Vision Prize Challenge </a></li>
+  <li style="list-style-type:none;">2nd in both supervised and semi-supervised learning track, 3000 + 1200 USD</li>
+</ul>
 <h2 class="year">2020</h2>
 <ul>
   <li><a href="https://www.iarai.ac.at/traffic4cast/competitions/traffic4cast-2020-core/?leaderboard">NeurIPS 2020 Traffic4cast Competition</a></li>
