@@ -134,7 +134,13 @@
     <!-- Hidden abstract block -->
     {% if entry.bibtex %}
     <div class="bibtex hidden">
-      <p>{{ entry.bibtex }}</p>
+      <p>@{{entry.type}}{ {{entry.key}}, 
+         title = { {{entry.title}} },
+         author = { {{entry.author}} },
+         journal = { {{entry.journal}} },
+         {% if entry.doi %} doi = { {{entry.doi}} },{% endif %}
+         year = { {{entry.year}} } }
+      </p>
     </div>
     {% endif %}
     {% if entry.abstract %}
