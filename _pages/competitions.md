@@ -9,6 +9,10 @@ nav: true
 <div class="publications">
 <h2 class="year">2021</h2>
 <ul>
+  <li><a>KDD CUP 2021 Reinforcement Learning Competition Track (RL Track)</a></li>
+  <li style="list-style-type:none;">10th, 500 </li>
+</ul>
+<ul>
   <li><a href="https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021">CVRP 2021 The 2nd Agriculture-Vision Prize Challenge </a></li>
   <li style="list-style-type:none;">2nd in both supervised and semi-supervised learning track, 3000 + 1200 USD, <a href="https://github.com/wufanyou/WRL-Agriculture-Vision">solution</a></li>
 </ul>
