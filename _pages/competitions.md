@@ -12,7 +12,7 @@ nav: true
 <h2 class="year">{{y[0]}}</h2>
   {% for entry in y[1] %}
   <div class="row">
-    <div class="col-sm-1" style="text-align: right;font-size: 30px">
+    <div class="col-sm-1 badge" style="text-align: right;font-size: 30px">
     {% if entry.emoji %}
       {{entry.emoji}}
     {% endif %}
