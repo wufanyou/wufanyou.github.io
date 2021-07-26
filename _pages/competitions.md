@@ -12,12 +12,14 @@ nav: true
 <h2 class="year">{{y[0]}}</h2>
   {% for entry in y[1] %}
   <div class="row">
+    <div class="col-sm-1">
+    </div>
     <div class="col-sm-1" style="text-align: center;font-size: 30px">
     {% if entry.emoji %}
       {{entry.emoji}}
     {% endif %}
     </div>
-    <div class="col-sm-11">
+    <div class="col-sm-10">
       {% if entry.website %}
         <div class="title"><b><a href="{{entry.website}}">{{entry.name}}</a></b></div>
       {% else %}
