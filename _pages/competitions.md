@@ -8,7 +8,7 @@ nav: true
 
 <div class="publications">
 
-{% for y in site.data.coauthors %}
+{% for y in site.data.prize %}
 <h2 class="year">{{y[0]}}</h2>
   {% for entry in y[1] %}
   <div class="row">
