@@ -1,7 +1,7 @@
 ---
 layout: page
-permalink: /publications/
-title: Publications
+permalink: /publication/
+title: Publication
 years: [2021,2020,2019,2017]
 nav: true
 ---

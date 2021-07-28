@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Competitions
-permalink: /competitions/
+title: Competition
+permalink: /competition/
 #description: Here lists my competitions with cash prize.
 nav: true
 ---
