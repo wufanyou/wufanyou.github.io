@@ -29,7 +29,12 @@ nav: true
       {% else %}
         <div class="title"><b>{{entry.name}}</b></div>
       {% endif %}
-        <div class="author"><b><em>{{entry.position}}, {{entry.prize}}</em></b>
+        <div class="author"><b><em>{{entry.position}}
+        {% if entry.prize %}
+        , {{entry.prize}}</em></b>
+        {% else %}
+        </em></b>
+        {% endif %}
         {% if entry.solution %}
         <b><em><a style="border-left: 2px solid grey;" > </a></em></b>
         <b><a  style= "margin-left: 6px" target="_blank" rel="noopener noreferrer" href="{{entry.solution}}">solution 
