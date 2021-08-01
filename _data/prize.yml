@@ -1,28 +1,5 @@
 2021:
   - 
-    name:
-      Amazon Last Mile Routing Research Challenge
-    position:
-      6<sup> th</sup>
-    prize: 
-    emoji:
-      6️⃣
-    website: 
-      https://routingchallenge.mit.edu/
-  - 
-    conference:
-      KDD CUP 2021
-    name:
-      Reinforcement Learning Competition Track (RL Track)
-    position:
-      10<sup> th</sup>
-    prize:
-      500 US💲
-    emoji:
-      🔟
-    website: 
-      http://www.yunqiacademy.org/home/leaderboard
-  - 
     conference:
       CVRP 2021 
     name:
@@ -37,22 +14,31 @@
       https://github.com/wufanyou/WRL-Agriculture-Vision
     emoji:
       🥈
-2020:
+  - 
+    name:
+      Amazon Last Mile Routing Research Challenge
+    position:
+      6<sup> th</sup>
+    prize: 
+    emoji:
+      6️⃣
+    website: 
+      https://routingchallenge.mit.edu/
+    solution: https://github.com/wufanyou/TLab-Last-Mile
   - 
     conference:
-      NeurIPS 2020
+      KDD CUP 2021
     name:
-      Traffic4cast Competition
+      Reinforcement Learning Competition Track (RL Track)
     position:
-      2<sup> nd</sup>
+      10<sup> th</sup>
     prize:
-      5000 US💲
-    website: 
-      https://www.iarai.ac.at/traffic4cast/competitions/traffic4cast-2020-core/?leaderboard
-    solution:
-      https://github.com/wufanyou/Traffic4Cast-2020-TLab
+      500 US💲
     emoji:
-      🥈
+      🔟
+    website: 
+      http://www.yunqiacademy.org/home/leaderboard
+2020:
   - 
     conference:
       KDD CUP 2020
@@ -68,7 +54,21 @@
       🥇
     solution:
       /assets/pdf/kdd-cup-2020-rl-solution.pdf
-
+  - 
+    conference:
+      NeurIPS 2020
+    name:
+      Traffic4cast Competition
+    position:
+      2<sup> nd</sup>
+    prize:
+      5000 US💲
+    website: 
+      https://www.iarai.ac.at/traffic4cast/competitions/traffic4cast-2020-core/?leaderboard
+    solution:
+      https://github.com/wufanyou/Traffic4Cast-2020-TLab
+    emoji:
+      🥈
 2019:
   - 
     conference:
@@ -98,7 +98,6 @@
       https://dianshi.baidu.com/competition/29/rule
     emoji:
       4️⃣
-
 2018:
   - 
     conference:
