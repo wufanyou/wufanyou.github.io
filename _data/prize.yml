@@ -127,17 +127,6 @@
 2017:
   - 
     name:
-      Alibaba Cloud's 2nd Annual Security Algorithm Challenge
-    position:
-      1<sup> st</sup> in the final, overall ~6th
-    prize:
-      approx. 1500 US💲
-    website: 
-      https://tianchi.aliyun.com/
-    emoji:
-      6️⃣
-  - 
-    name:
       Dahang Cup
     position:
       2<sup> nd</sup>
@@ -147,3 +136,14 @@
       https://tianchi.aliyun.com/
     emoji:
       🥈
+  - 
+    name:
+      Alibaba Cloud's 2nd Annual Security Algorithm Challenge
+    position:
+      1<sup> st</sup> in the final, overall ~6th
+    prize:
+      approx. 1500 US💲
+    website: 
+      https://tianchi.aliyun.com/
+    emoji:
+      6️⃣
