@@ -131,15 +131,32 @@
     <!-- Hidden abstract block -->
     {% if entry.bibtex %}
     <div class="bibtex hidden">
-      <p>@{{entry.type}}{ {{entry.key}}, 
-         title = { {{entry.title}} },
-         author = { {{entry.author}} },
-         journal = { {{entry.journal}} },
-         {% if entry.doi %} doi = { {{entry.doi}} },{% endif %}
-         year = { {{entry.year}} } }
-      </p>
+{% if entry.doi %}
+{% highlight bibtex %}@{{entry.type}}{ {{entry.key}}, 
+title = { {{entry.title}} },
+author = { {{entry.author}} },
+journal = { {{entry.journal}} },
+doi = { {{entry.doi}} },
+year = { {{entry.year}} } 
+}
+{% endhighlight %}
+{% else %}
+{% highlight bibtex %}@{{entry.type}}{ {{entry.key}}, 
+title = { {{entry.title}} },
+author = { {{entry.author}} },
+journal = { {{entry.journal}} },
+year = { {{entry.year}} } 
+}
+{% endhighlight %}
+{% endif %} 
+      
+    
+
+  
+
     </div>
     {% endif %}
+
     {% if entry.abstract %}
     <div class="abstract hidden">
       <p>{{ entry.abstract }}</p>
