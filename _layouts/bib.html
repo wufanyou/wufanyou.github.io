@@ -128,26 +128,10 @@
     {% endif %}
     </div>
 
-    {% assign l = '{' %}
-    {% assign r = '}' %}
-
     {% if entry.bibtex %}
     <div class="bibtex hidden">
-{% highlight bibtex %}{% if entry.doi %}@{{entry.type}}{{l}}{{entry.key}},
-  title =  {{l}}{{entry.title}}{{r}},
-  author = {{l}}{{entry.author}}{{r}},
-  journal = {{l}}{{entry.journal}}{{r}},
-  doi = {{l}}{{entry.doi}}{{r}},
-  year = {{l}}{{entry.year}}{{r}} 
-}
-{% else %}@{{entry.type}}{{l}}{{entry.key}}, 
-  title = {{l}}{{entry.title}}{{r}},
-  author = {{l}}{{entry.author}}{{r}},
-  journal = {{l}}{{entry.journal}}{{r}},
-  year = {{l}}{{entry.year}}{{r}} 
-}
-{% endif %}
-{% endhighlight %}
+      {% assign size = entry.bibtex | size | minus: 18 %}
+      {% highlight bibtex %}{{ entry.bibtex | slice: 7,size }}{% endhighlight %}
     </div>
     {% endif %}
 
