@@ -133,7 +133,7 @@
 
     {% if entry.bibtex %}
     <div class="bibtex hidden">
-{% highlight bibtex %}{% if entry.doi %}@{{entry.type}}{ {{entry.key}},
+{% highlight bibtex %}{% if entry.doi %}@{{entry.type}}{{l}}{{entry.key}},
   title =  {{l}}{{entry.title}}{{r}},
   author = {{l}}{{entry.author}}{{r}},
   journal = {{l}}{{entry.journal}}{{r}},
