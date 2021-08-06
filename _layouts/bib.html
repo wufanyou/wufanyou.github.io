@@ -128,32 +128,26 @@
     {% endif %}
     </div>
 
-    <!-- Hidden abstract block -->
+    {% assign l = '{' %}
+    {% assign r = '}' %}
+
     {% if entry.bibtex %}
     <div class="bibtex hidden">
-{% if entry.doi %}
-{% highlight bibtex %}@{{entry.type}}{ {{entry.key}}, 
-title = { {{entry.title}} },
-author = { {{entry.author}} },
-journal = { {{entry.journal}} },
-doi = { {{entry.doi}} },
-year = { {{entry.year}} } 
+{% highlight bibtex %}{% if entry.doi %}@{{entry.type}}{ {{entry.key}},
+  title =  {{l}}{{entry.title}}{{r}},
+  author = {{l}}{{entry.author}}{{r}},
+  journal = {{l}}{{entry.journal}}{{r}},
+  doi = {{l}}{{entry.doi}}{{r}},
+  year = {{l}}{{entry.year}}{{r}} 
 }
-{% endhighlight %}
-{% else %}
-{% highlight bibtex %}@{{entry.type}}{ {{entry.key}}, 
-title = { {{entry.title}} },
-author = { {{entry.author}} },
-journal = { {{entry.journal}} },
-year = { {{entry.year}} } 
+{% else %}@{{entry.type}}{{l}}{{entry.key}}, 
+  title = {{l}}{{entry.title}}{{r}},
+  author = {{l}}{{entry.author}}{{r}},
+  journal = {{l}}{{entry.journal}}{{r}},
+  year = {{l}}{{entry.year}}{{r}} 
 }
+{% endif %}
 {% endhighlight %}
-{% endif %} 
-      
-    
-
-  
-
     </div>
     {% endif %}
 
@@ -162,5 +156,6 @@ year = { {{entry.year}} }
       <p>{{ entry.abstract }}</p>
     </div>
     {% endif %}
+
   </div>
 </div>

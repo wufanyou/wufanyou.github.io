@@ -104,6 +104,7 @@ highlighter: rouge
 highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
     css_class: 'highlight'
     span:
@@ -120,9 +121,11 @@ exclude: [vendor]
 plugins:
   - jekyll-email-protect
   - jekyll-github-metadata
+  - jekyll-feed
   - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-twitter-plugin
+  - jekyll-sitemap
   - jemoji
   # - bootstrap
   # - material-sass
@@ -149,8 +152,9 @@ scholar:
   details_dir: bibliography
   details_layout: bibtex.html
   details_link: Details
-
+  bibtex_skip_fields: ['abbr','html','selected','abstract','code']
   query: "@*"
+  bibtex_filters:
 
 # -----------------------------------------------------------------------------
 # Optional Features
@@ -183,7 +187,7 @@ jquery:
   version: "3.5.1"
   integrity: "sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
 mathjax:
-  version: "3.1.2"
+  version: "3.2.0"
 mansory:
   version: "4.2.2"
   integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
