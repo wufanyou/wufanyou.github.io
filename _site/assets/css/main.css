@@ -69,7 +69,7 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 .news table th { color: var(--global-text-color); }
 
 .social { text-align: center; }
-.social .contact-icon { font-size: 4rem; }
+.social .contact-icon { font-size: 3.5rem; }
 .social .contact-icon a { color: var(--global-icon-color); }
 .social .contact-icon a:hover { color: var(--global-theme-color); }
 .social .contact-note { font-size: 0.8rem; }
