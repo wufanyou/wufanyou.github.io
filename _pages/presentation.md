@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Media
-permalink: /media/
+title: Presentation
+permalink: /presentation/
 #description: Here lists my competitions with cash prize.
 nav: true
 ---
