@@ -13,6 +13,8 @@ nav: true
 
 <h2 class="year">Talks</h2>
 <ul>
+    <li><a href="https://www.arlseminar.com/">Some Machine Learning Applications about Tree and Wood</a></li>
+    <li style="list-style-type:none;">11/08/2021, Digital Forestry Retreat, <a href="/assets/pdf/Fanyou_Wu-DFR-2021.pdf">video</a></li>
     <li><a href="https://www.agriculture-vision.com/agriculture-vision-2021/program-schedule-2021">Team WRL: Solution for CVPR 2021 Agriculture-Vision Prize Challenge</a></li>
     <li style="list-style-type:none;">6/19/2021, CVPR 2021 Agriculture-Vision Prize Challenge, <a href="https://youtu.be/NibZdgDTYx4">video</a></li>
   <li><a href="https://www.iarai.ac.at/traffic4cast/2020-competition/traffic4cast-2020-special-session/">TLab: Traffic Map Movie Forecasting Based on HR-NET</a></li>
