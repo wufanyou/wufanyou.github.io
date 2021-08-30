@@ -152,7 +152,7 @@ scholar:
   details_dir: bibliography
   details_layout: bibtex.html
   details_link: Details
-  bibtex_skip_fields: ['abbr','html','selected','abstract','code']
+  bibtex_skip_fields: ['abbr','html','selected','abstract','code','pdf']
   query: "@*"
   bibtex_filters:
 
