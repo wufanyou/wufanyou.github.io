@@ -12,6 +12,6 @@ Zoom [link]( https://purdue-edu.zoom.us/j/93203040490).
 
 The title is __Selected Topics in Machine Learning Research for Forestry__.
 
-Defense slides can be downloaded [here](assets/pdf/defense.pdf). 
+Defense slides can be downloaded [here](/assets/pdf/defense.pdf). 
 
 
