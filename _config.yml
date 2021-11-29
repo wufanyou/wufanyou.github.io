@@ -7,7 +7,7 @@ first_name: Fanyou
 middle_name: #R.
 last_name: Wu
 chinese_name: 吴凡优
-email: wu1297@purdue.edu
+email: fanyou.wu@outlook.com
 #description: > # the ">" symbol means to ignore newlines until "footer_text:"
   #A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: 
@@ -60,7 +60,7 @@ resume: /assets/pdf/Fanyou_Wu_Resume.pdf
 contact_note: #>
   #You can even add a little note about which of these is the best way to reach you.
 
-google_analytics: #UA-XXXXXXXXX # out your google-analytics code
+google_analytics: G-1SR85NXEWP #UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: #XXXXXXXXX # panelbear analytics site ID
 
 # -----------------------------------------------------------------------------
