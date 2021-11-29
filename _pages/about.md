@@ -15,7 +15,7 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-Postdoctoral Research Associate <br/>
+Postdoctoral Research Associate (2022.1) <br/>
 Department of Forestry and Natural Resources <br/>
 Purdue University <br/>
 
