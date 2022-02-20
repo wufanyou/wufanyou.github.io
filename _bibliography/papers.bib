@@ -1,7 +1,26 @@
 ---
 ---
 
+@article{liu2022lastmile,
+  title={Representation, Learning and Inference for Real-world Delivery Route Optimization},
+  author={Liu, Yang and Wang, Kai and Wu, Fanyou and Liu, Zhiyuan and Qu, Xiaobo},
+  abstract={The real-world delivery route optimization problem aims to design routes that can adapt to complex delivery scenarios by learning and understanding drivers’ behaviors. However, the complexity of real-world environment makes it difficult to quantify and incorporate various factors influencing delivery. To overcome this challenge, this paper proposes a high-fidelity approximation of real-world delivery routes. In particular, we develop a two-stage architecture, where in the first stage, we leverage a pure machine learning model to learn drivers’ delivery behaviors, while in the second stage, a classical TSP model is embedded for respecting the shortest-path behavior locally. To realize the representation, learning and inference of drivers’ delivery behaviors, we build our approach on a language model in machine learning. Specifically, a real-world delivery route is first analogously defined as a sentence in natural language, which preserves the implicit knowledge of drivers’ behavioral patterns. Then, we use an unsupervised learning-based method to learn the vector representations of delivery routes and infer the drivers’ delivery sequences based on a vector-to-sequence algorithm. Numerical results show that the proposed approach outperforms a pure optimization approach and is competent to that of a well-designed tailored non-machine learning method. Moreover, the proposed architecture has its generalizability to variants of the problem. First, as a versatile method, the proposed model can easily be extended to different data sources from different delivery service providers. Second, for real-world shortest-path problems, the proposed model can also be used to efficiently provide routes that allow for various realistic factors such as safety and convenience by learning from the drivers’ experiences.},
+  journal={Under review},
+  year={2022},
+  selected={false},
+  abbr = {🚥},
+}
 
+
+@article{liu2022learning,
+  title={Deep dispatching: a deep reinforcement learning approach for vehicle dispatching on online ride-hailing platform},
+  author={Liu, Yang and Wu, Fanyou and Lyu, Cheng and Liu, Zhiyuan and Ye, Jiepin and Qu, Xiaobo},
+  abstract={The vehicle dispatching system is one of the most critical problems in online taxi-hailing platforms, which requires adapting the operation and management strategy to the dynamics of demand and supply. In this paper, we propose a single-agent deep reinforcement learning approach for the vehicle repositioning problem by reallocating vacant vehicles to regions with a large demand gap in advance. The simulator and the vehicle repositioning algorithm are designed based on industrial-scale real-world data and the workflow of online taxi-hailing platforms, ensuring the practical value of our approach. Besides, the vehicle repositioning problem is translated in analogy with the load balancing problem in computers. Inspired by the recommendation system, the high concurrency of repositioning requests is addressed by sorting the actions as a recommendation list, whereby matching action with requests. Experiments demonstrate that the proposed approach is superior to the existing ones. It is also worth noting that the proposed approach won first place in the vehicle repositioning task of KDD Cup 2020.},
+  journal={Under review},
+  year={2022},
+  selected={false},
+  abbr = {🚥},
+}
 
 
 @article{wu2021bark,
@@ -57,15 +76,7 @@
   abstract = 	 {Using historical data to help route planning is significant since the real world is complicated, and the quality of a route is not only defined by its theoretical cost. This report proposed a two-step method that involved learning history and performing classic solutions to vehicle routing problems (VRP). Specifically, the task of the Last Mile Routing Research Challenge is decomposed into two steps: 1) predicting zone level sequence and 2) perform VRP within a single zone. Our method reaches 0.042 locally based on a train test split. The code can be found https://github.com/wufanyou/TLab-Last-Mile.}
 }
 
-@article{liu2021learning,
-  title={Learning to Reposition on an Online Taxi-hailing Platform},
-  author={Liu, Yang and Wu, Fanyou and Lyu, Cheng and Liu, Zhiyuan and Ye, Jiepin},
-  abstract={The vehicle dispatching system is one of the most critical problems in online taxi-hailing platforms, which requires adapting the operation and management strategy to the dynamics of demand and supply. In this paper, we propose a single-agent deep reinforcement learning approach for the vehicle repositioning problem by reallocating vacant vehicles to regions with a large demand gap in advance. The simulator and the vehicle repositioning algorithm are designed based on industrial-scale real-world data and the workflow of online taxi-hailing platforms, ensuring the practical value of our approach. Besides, the vehicle repositioning problem is translated in analogy with the load balancing problem in computers. Inspired by the recommendation system, the high concurrency of repositioning requests is addressed by sorting the actions as a recommendation list, whereby matching action with requests. Experiments demonstrate that the proposed approach is superior to the existing ones. It is also worth noting that the proposed approach won first place in the vehicle repositioning task of KDD Cup 2020.},
-  journal={Under review},
-  year={2021},
-  selected={false},
-  abbr = {🚥},
-}
+
 
 @article{wu2020tlab,
   title={TLab: Traffic Map Movie Forecasting Based on HR-NET},
