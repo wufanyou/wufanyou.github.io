@@ -5,17 +5,17 @@ title: Publication
 years: [2022,2021,2020,2019,2017]
 nav: true
 description: |
-  
 ---
-
 <div class="publications">
 
 {% for y in page.years %}
-  <h2 class="year">{{y}}</h2>
+<div name="pub" id="{{y}}">
+  <h2 class="year" >{{y}}</h2>
   {% bibliography -f papers -q @*[year={{y}}]* %}
+</div>
 {% endfor %}
 
-<h2 class="year"> Symbol</h2>
+<h2 class="year" name = "symbol" >Symbol</h2>
 <div class="row">
   <div class="col-sm-1">
   </div>
