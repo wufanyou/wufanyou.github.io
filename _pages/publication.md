@@ -33,6 +33,10 @@ description: |
       <div class='col-sm-6'>
       🕸️: Complex Networks
       </div>
+      <div class='col-sm-6'>
+       🔍: Information Retrieval
+      </div>
+     
   </div>
   <div class="col-sm-1">
   </div>
