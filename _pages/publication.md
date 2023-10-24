@@ -36,7 +36,9 @@ description: |
       <div class='col-sm-6'>
        🔍: Information Retrieval
       </div>
-     
+      <div class='col-sm-6'>
+       🖊️: Natural Language Processing
+      </div>
   </div>
   <div class="col-sm-1">
   </div>
