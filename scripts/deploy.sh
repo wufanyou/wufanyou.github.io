@@ -2,8 +2,15 @@
 set -e
 
 # Build the static site
+echo "Installing dependencies..."
+npm install
 echo "Building..."
 npm run build
+
+# Clean unnecessary files from out/
+echo "Cleaning build output..."
+find out/ -name "*.txt" -delete
+find out/ -name "*.map" -delete
 
 # Commit and push source code to main
 echo "Pushing source to main..."
@@ -14,8 +21,7 @@ git push origin main
 # Update webpage branch with static output
 echo "Pushing static output to webpage..."
 TEMP_DIR=$(mktemp -d)
-cp -r out/* "$TEMP_DIR"
-cp out/.nojekyll "$TEMP_DIR" 2>/dev/null || true
+cp -r out/. "$TEMP_DIR"
 
 git checkout webpage
 # Remove old files (except .git)
