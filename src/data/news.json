@@ -1,7 +1,7 @@
 [
   {
     "date": "Feb 21, 2026",
-    "content": "I have migrated my website to a new platform.",
+    "content": "I have migrated my website from jekyll to next.js using Claude Code.",
     "link": null,
     "show": true
   },
