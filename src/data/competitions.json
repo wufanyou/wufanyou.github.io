@@ -1,5 +1,14 @@
 [
   {
+    "year": 2024,
+    "emoji": null,
+    "title": "KDD CUP 2024 | Meta Comprehensive RAG Benchmark",
+    "link": "https://www.aicrowd.com/challenges/esci-challenge-for-improving-product-search",
+    "rank": "Category Winners in 2 tracks",
+    "prize": "500 + 500 US$",
+    "solution_link": null
+  },
+  {
     "year": 2022,
     "emoji": "silver",
     "title": "KDD CUP 2022 | Amazon ESCI Challege for Improving Product Search",

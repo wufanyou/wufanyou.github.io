@@ -22,12 +22,12 @@ function AuthorList({ authors }: { authors: string[] }) {
   );
 }
 
-export default function PublicationEntry({ pub }: { pub: Publication }) {
+export default function PublicationEntry({ pub, year, isFirst }: { pub: Publication; year?: string; isFirst?: boolean }) {
   const [showBibtex, setShowBibtex] = useState(false);
   const [showAbstract, setShowAbstract] = useState(false);
 
   return (
-    <li className="mb-0.5">
+    <li className={`mb-0.5 ${isFirst ? "border-t border-[#e8e8e8] mt-4 pt-4" : ""}`}>
       <div className="pub-card">
         <div className="flex gap-2">
           <div className="w-10 text-center flex-shrink-0 flex items-start justify-center pt-1"><CategoryIcon category={pub.emoji} /></div>
@@ -97,6 +97,13 @@ export default function PublicationEntry({ pub }: { pub: Publication }) {
               </div>
             )}
           </div>
+          {year ? (
+            <div className="w-12 text-center flex-shrink-0 flex items-start justify-center pt-1">
+              <span className="text-[#e8e8e8] font-bold text-lg">{year}</span>
+            </div>
+          ) : (
+            <div className="w-12 flex-shrink-0" />
+          )}
         </div>
       </div>
     </li>

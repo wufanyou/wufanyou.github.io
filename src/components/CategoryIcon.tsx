@@ -39,47 +39,53 @@ const icons: Record<string, React.ReactNode> = {
     </svg>
   ),
   gold: (
-    <svg viewBox="0 0 24 24" width="24" height="24">
+    <svg viewBox="0 0 24 24" className="w-full h-full">
       <circle cx="12" cy="12" r="10" fill="#FFD700" />
       <text x="12" y="16" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#fff">1</text>
     </svg>
   ),
   silver: (
-    <svg viewBox="0 0 24 24" width="24" height="24">
+    <svg viewBox="0 0 24 24" className="w-full h-full">
       <circle cx="12" cy="12" r="10" fill="#C0C0C0" />
       <text x="12" y="16" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#fff">2</text>
     </svg>
   ),
   rank4: (
-    <svg viewBox="0 0 24 24" width="24" height="24">
+    <svg viewBox="0 0 24 24" className="w-full h-full">
       <circle cx="12" cy="12" r="10" fill="#0076df" />
       <text x="12" y="16" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#fff">4</text>
     </svg>
   ),
   rank6: (
-    <svg viewBox="0 0 24 24" width="24" height="24">
+    <svg viewBox="0 0 24 24" className="w-full h-full">
       <circle cx="12" cy="12" r="10" fill="#0076df" />
       <text x="12" y="16" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#fff">6</text>
     </svg>
   ),
   rank8: (
-    <svg viewBox="0 0 24 24" width="24" height="24">
+    <svg viewBox="0 0 24 24" className="w-full h-full">
       <circle cx="12" cy="12" r="10" fill="#0076df" />
       <text x="12" y="16" textAnchor="middle" fontSize="12" fontWeight="bold" fill="#fff">8</text>
     </svg>
   ),
   rank10: (
-    <svg viewBox="0 0 24 24" width="24" height="24">
+    <svg viewBox="0 0 24 24" className="w-full h-full">
       <circle cx="12" cy="12" r="10" fill="#0076df" />
       <text x="12" y="16" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#fff">10</text>
     </svg>
   ),
 };
 
-export default function CategoryIcon({ category }: { category: string }) {
+const fallback = (
+  <svg viewBox="0 0 24 24" className="w-full h-full">
+    <circle cx="12" cy="12" r="10" fill="#0076df" />
+  </svg>
+);
+
+export default function CategoryIcon({ category }: { category: string | null }) {
   return (
     <span className="inline-flex items-center justify-center text-[#0076df]">
-      {icons[category] || null}
+      {category ? icons[category] || fallback : fallback}
     </span>
   );
 }

@@ -160,14 +160,11 @@ export default function PublicationPageClient({
         <div className="flex-1 min-w-0">
           <div className="publications">
             {groupedByYear.years.map((year) => (
-              <div key={year}>
-                <h2 className="year-header">{year}</h2>
-                <ol className="list-none p-0 mt-8">
-                  {groupedByYear.grouped[year].map((pub) => (
-                    <PublicationEntry key={pub.key} pub={pub} />
-                  ))}
-                </ol>
-              </div>
+              <ol key={year} className="list-none p-0">
+                {groupedByYear.grouped[year].map((pub, i) => (
+                  <PublicationEntry key={pub.key} pub={pub} year={i === 0 ? year : undefined} isFirst={i === 0} />
+                ))}
+              </ol>
             ))}
 
             {filtered.length === 0 && (

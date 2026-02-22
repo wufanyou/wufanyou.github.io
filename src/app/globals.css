@@ -31,7 +31,7 @@ a:hover {
 }
 
 .container-main {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -173,7 +173,7 @@ a:hover {
 /* Social icons */
 .social-icons {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .social-icons a {
   color: var(--global-icon-color);
@@ -181,8 +181,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
   border-radius: 9999px;
   transition: all 0.2s ease;
 }

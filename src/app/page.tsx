@@ -15,7 +15,7 @@ export default function Home() {
       </header>
 
       <article>
-        <div className="sm:float-right sm:w-[30%] sm:ml-6 mb-4">
+        <div className="sm:float-right sm:w-[22%] sm:ml-6 mb-4">
           <Image
             src="/assets/img/wu1297.jpg"
             alt="Fanyou Wu"
@@ -23,7 +23,7 @@ export default function Home() {
             height={300}
             className="rounded shadow-sm w-full"
           />
-          <div className="social-icons mt-2 flex justify-center gap-3">
+          <div className="social-icons mt-2 flex flex-wrap justify-center gap-2">
             <a href="mailto:fanyou.wu@outlook.com" title="Email">
               <i className="fas fa-envelope"></i>
             </a>
