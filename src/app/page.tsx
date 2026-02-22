@@ -94,7 +94,7 @@ export default function Home() {
           <h2 className="text-2xl font-medium mb-3">News</h2>
           <table className="news-table w-full">
             <tbody>
-              {news.map((item, i) => (
+              {news.filter((item) => item.show).map((item, i) => (
                 <tr key={i}>
                   <th className="py-1">{item.date}</th>
                   <td

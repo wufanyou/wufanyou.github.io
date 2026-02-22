@@ -1,12 +1,20 @@
 [
   {
+    "date": "Feb 21, 2026",
+    "content": "I have migrated my website to a new platform.",
+    "link": null,
+    "show": true
+  },
+  {
     "date": "Sep 14, 2022",
     "content": "Our tree diameter measurement and species identification App is under under testing [update].",
-    "link": null
+    "link": null,
+    "show": false
   },
   {
     "date": "Jul 22, 2022",
     "content": "I received 2nd place for <a href=\"https://www.aicrowd.com/challenges/esci-challenge-for-improving-product-search\">KDD CUP 2022 Amazon</a> in Task 2 and Task 3.",
-    "link": null
+    "link": null,
+    "show": false
   }
 ]
