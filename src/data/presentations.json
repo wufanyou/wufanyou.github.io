@@ -1,0 +1,50 @@
+{
+  "talks": [
+    {
+      "title": "Some Machine Learning Applications about Tree and Wood",
+      "date": "11/08/2021",
+      "venue": "Digital Forestry Retreat",
+      "slides": "/assets/pdf/Fanyou_Wu-DFR-2021.pdf",
+      "video": null,
+      "link": null
+    },
+    {
+      "title": "Team WRL: Solution for CVPR 2021 Agriculture-Vision Prize Challenge",
+      "date": "6/19/2021",
+      "venue": "CVPR 2021 Agriculture-Vision Prize Challenge",
+      "slides": null,
+      "video": "https://youtu.be/NibZdgDTYx4",
+      "link": "https://www.agriculture-vision.com/agriculture-vision-2021/program-schedule-2021"
+    },
+    {
+      "title": "TLab: Traffic Map Movie Forecasting Based on HR-NET",
+      "date": "12/11/2020",
+      "venue": "Traffic4cast 2020 Special Session",
+      "slides": null,
+      "video": null,
+      "link": "https://www.iarai.ac.at/traffic4cast/2020-competition/traffic4cast-2020-special-session/"
+    },
+    {
+      "title": "Some Experience about Machine Learning Competitions \u2013 using KDD CUP RL track as an example",
+      "date": "12/08/2020",
+      "venue": "Transportation Virtual Workshop",
+      "slides": null,
+      "video": null,
+      "link": "https://www.samsi.info/programs-and-activities/semester-long-programs/past/2019-2020-program-on-games-decisions-risk-and-reliability/transportation-virtual-workshop/"
+    },
+    {
+      "title": "KDD Cup 2020 RL Track Winners Presentation \u2013 Part II",
+      "date": "10/27/2020",
+      "venue": "Reinforcement Learning Algorithm & Application Virtual Seminar",
+      "slides": null,
+      "video": null,
+      "link": "https://www.arlseminar.com/"
+    }
+  ],
+  "posters": [
+    "Applying Zero Shot Learning to Wood Identification. SWST.",
+    "Efficient Project Gradient Descent for Ensemble Adversarial Attack. IJCAJ 19 AIBS WORKSHOP.",
+    "Deep Learning for Lumber Identification. ISHCP.",
+    "A Mobile App for Common Midwestern Hardwood Species Identification. FNR Research Poster Competition."
+  ]
+}

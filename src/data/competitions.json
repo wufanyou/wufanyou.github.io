@@ -1,0 +1,110 @@
+[
+  {
+    "year": 2022,
+    "emoji": "silver",
+    "title": "KDD CUP 2022 | Amazon ESCI Challege for Improving Product Search",
+    "link": "https://www.aicrowd.com/challenges/esci-challenge-for-improving-product-search",
+    "rank": "2nd in task 2 and task 3",
+    "prize": "2000 + 2000 US$",
+    "solution_link": "https://github.com/wufanyou/KDD-Cup-2022-Amazon"
+  },
+  {
+    "year": 2021,
+    "emoji": "silver",
+    "title": "CVRP 2021 | The 2nd Agriculture-Vision Prize Challenge",
+    "link": "https://www.agriculture-vision.com/agriculture-vision-2021/prize-challenge-2021",
+    "rank": "2nd in two tracks",
+    "prize": "3000 + 1200 US$",
+    "solution_link": "https://github.com/wufanyou/WRL-Agriculture-Vision"
+  },
+  {
+    "year": 2021,
+    "emoji": "rank6",
+    "title": "Amazon Last Mile Routing Research Challenge",
+    "link": "https://routingchallenge.mit.edu/last-mile-routing-challenge-team-performance-and-leaderboard/",
+    "rank": "6th",
+    "prize": null,
+    "solution_link": "https://github.com/wufanyou/TLab-Last-Mile"
+  },
+  {
+    "year": 2021,
+    "emoji": "rank10",
+    "title": "KDD CUP 2021 | Reinforcement Learning Competition Track (RL Track)",
+    "link": "http://www.yunqiacademy.org/poster",
+    "rank": "10th",
+    "prize": "500 US$",
+    "solution_link": "https://github.com/wufanyou/TLab-City-Brain-Challenge"
+  },
+  {
+    "year": 2020,
+    "emoji": "gold",
+    "title": "KDD CUP 2020 | Reinforcement Learning Competition Track (RL Track)",
+    "link": "https://www.kdd.org/kdd2020/kdd-cup",
+    "rank": "1st in reposition track",
+    "prize": "8000 US$",
+    "solution_link": "/assets/pdf/kdd-cup-2020-rl-solution.pdf"
+  },
+  {
+    "year": 2020,
+    "emoji": "silver",
+    "title": "NeurIPS 2020 | Traffic4cast Competition",
+    "link": "https://www.iarai.ac.at/traffic4cast/competitions/traffic4cast-2020-core/?leaderboard",
+    "rank": "2nd",
+    "prize": "5000 US$",
+    "solution_link": "https://github.com/wufanyou/Traffic4Cast-2020-TLab"
+  },
+  {
+    "year": 2019,
+    "emoji": "gold",
+    "title": "IJCAI-19 | Alibaba Adversarial AI Challenge-Competition",
+    "link": "https://tianchi.aliyun.com/competition/entrance/231701/information",
+    "rank": "1st in traget attack track",
+    "prize": "5000 US$",
+    "solution_link": "https://github.com/wufanyou/EPGD"
+  },
+  {
+    "year": 2019,
+    "emoji": "rank4",
+    "title": "KDD CUP 2019 | Regular Machine Learning Competition Track (Regular ML Track)",
+    "link": "https://dianshi.baidu.com/competition/29/rule",
+    "rank": "4th",
+    "prize": "1000 US$",
+    "solution_link": null
+  },
+  {
+    "year": 2018,
+    "emoji": "silver",
+    "title": "JDD 2018 | Global Digitalization Challenge (Population Dynamics Census and Prediction)",
+    "link": "https://jdder-history.jd.com/act/JDDiscovery2018",
+    "rank": "2nd in the final, 1st in the NA region",
+    "prize": "approx. 23000 US$",
+    "solution_link": null
+  },
+  {
+    "year": 2018,
+    "emoji": "rank8",
+    "title": "Alibaba Cloud's 3rd Annual Security Algorithm Challenge",
+    "link": "https://tianchi.aliyun.com/",
+    "rank": "8th",
+    "prize": "approx. 1500 US$",
+    "solution_link": null
+  },
+  {
+    "year": 2017,
+    "emoji": "silver",
+    "title": "Dahang Cup",
+    "link": "https://tianchi.aliyun.com/",
+    "rank": "2nd",
+    "prize": "approx. 7600 US$",
+    "solution_link": null
+  },
+  {
+    "year": 2017,
+    "emoji": "rank6",
+    "title": "Alibaba Cloud's 2nd Annual Security Algorithm Challenge",
+    "link": "https://tianchi.aliyun.com/",
+    "rank": "1st in the final, overall ~6th",
+    "prize": "approx. 1500 US$",
+    "solution_link": null
+  }
+]

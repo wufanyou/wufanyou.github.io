@@ -1,26 +1,156 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --global-theme-color: #0076df;
+  --global-hover-color: #7bcce4;
+  --global-icon-color: #424242;
+  --global-text-color: #000000;
+  --global-bg-color: #ffffff;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: var(--global-text-color);
+  background-color: var(--global-bg-color);
+}
+
+a {
+  color: var(--global-theme-color);
+}
+a:hover {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+}
+
+.container-main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Profile */
+.profile img {
+  width: 100%;
+}
+
+/* Publications */
+.publications .year-header {
+  color: #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: -1.5rem;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.publications .pub-title {
+  font-weight: bolder;
+}
+
+.publications .pub-author em {
+  border-bottom: 1px solid;
+  font-style: normal;
+}
+
+.publications .pub-links a {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding: 0.15rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.publications .pub-links a:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+.publications .hidden-section {
+  font-size: 0.875rem;
+  max-height: 0;
+  overflow: hidden;
+  text-align: justify;
+  transition: all 0.15s ease;
+  border: dashed 1px transparent;
+}
+.publications .hidden-section.open {
+  max-height: 100em;
+  border-color: var(--global-text-color);
+}
+.publications .hidden-section p {
+  line-height: 1.4em;
+  margin: 10px;
+}
+.publications .hidden-section pre {
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 10px;
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+}
+
+/* Social icons */
+.social-icons {
+  text-align: center;
+  font-size: 3.5rem;
+}
+.social-icons a {
+  color: var(--global-icon-color);
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+
+/* News */
+.news-table th {
+  color: var(--global-text-color);
+  white-space: nowrap;
+  padding-right: 1rem;
+  font-weight: normal;
+  vertical-align: top;
+}
+.news-table td {
+  font-size: 1rem;
+  color: var(--global-text-color);
+}
+.news-table a {
+  color: var(--global-theme-color);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #e8e8e8;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 0.9rem;
+}
+
+/* Competition */
+.competition-row {
+  margin-bottom: 0.5rem;
+}
+
+/* Navbar active */
+.nav-link-active {
+  font-weight: bolder !important;
+  color: var(--global-theme-color) !important;
+}
+.nav-link:hover {
+  color: var(--global-hover-color) !important;
+  text-decoration: none !important;
 }
