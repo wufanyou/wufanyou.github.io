@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+REPO_URL=$(git remote get-url origin)
+
 # Build the static site
 echo "Installing dependencies..."
 npm install
@@ -18,21 +20,18 @@ git add -A
 git commit -m "Update site" || echo "No source changes to commit"
 git push origin main
 
-# Update webpage branch with static output
+# Update webpage branch in an isolated temp repo
 echo "Pushing static output to webpage..."
 TEMP_DIR=$(mktemp -d)
-cp -r out/. "$TEMP_DIR"
-
-git checkout webpage
-# Remove old files (except .git)
-git rm -rf . > /dev/null 2>&1 || true
-cp -r "$TEMP_DIR"/. .
-rm -rf "$TEMP_DIR"
+cd "$TEMP_DIR"
+git init
+git checkout --orphan webpage
+cp -r "$OLDPWD"/out/. .
 git add -A
-git commit -m "Update static build" || echo "No build changes to commit"
-git push origin webpage
-
-# Switch back to main
-git checkout main
+git commit -m "Update static build"
+git remote add origin "$REPO_URL"
+git push origin webpage --force
+cd "$OLDPWD"
+rm -rf "$TEMP_DIR"
 
 echo "Done! Both main and webpage branches updated."
