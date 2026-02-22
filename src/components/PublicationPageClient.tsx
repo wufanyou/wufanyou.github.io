@@ -176,14 +176,6 @@ export default function PublicationPageClient({
               </p>
             )}
 
-            <h2 className="year-header">Symbol</h2>
-            <div className="mt-8 grid grid-cols-2 gap-2">
-              {symbolLegend.map((s) => (
-                <div key={s.label} className="flex items-center gap-2">
-                  <CategoryIcon category={s.key} /> {s.label}
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </article>
