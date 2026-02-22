@@ -15,7 +15,7 @@ export default function Home() {
       </header>
 
       <article>
-        <div className="sm:float-right sm:w-[30%] ml-4 mb-4">
+        <div className="sm:float-right sm:w-[30%] sm:ml-6 mb-4">
           <Image
             src="/assets/img/wu1297.jpg"
             alt="Fanyou Wu"
@@ -25,7 +25,7 @@ export default function Home() {
           />
           <div className="social-icons mt-2 flex justify-center gap-3">
             <a href="mailto:fanyou.wu@outlook.com" title="Email">
-              <i className="fas fa-envelope fa-xs"></i>
+              <i className="fas fa-envelope"></i>
             </a>
             <a
               href="https://orcid.org/0000-0002-4894-5738"
@@ -33,7 +33,7 @@ export default function Home() {
               rel="noopener noreferrer"
               title="ORCID"
             >
-              <i className="ai ai-orcid fa-xs"></i>
+              <i className="ai ai-orcid"></i>
             </a>
             <a
               href="https://scholar.google.com/citations?user=C8WYCTAAAAAJ"
@@ -41,7 +41,7 @@ export default function Home() {
               rel="noopener noreferrer"
               title="Google Scholar"
             >
-              <i className="ai ai-google-scholar fa-xs"></i>
+              <i className="ai ai-google-scholar"></i>
             </a>
             <a
               href="https://github.com/wufanyou"
@@ -49,15 +49,15 @@ export default function Home() {
               rel="noopener noreferrer"
               title="GitHub"
             >
-              <i className="fab fa-github fa-xs"></i>
+              <i className="fab fa-github"></i>
             </a>
             <a href="/assets/pdf/Fanyou_Wu_Resume.pdf" target="_blank" title="Resume">
-              <i className="ai ai-cv fa-xs"></i>
+              <i className="ai ai-cv"></i>
             </a>
           </div>
         </div>
 
-        <div className="clearfix">
+        <div className="clearfix leading-relaxed space-y-4">
           <p>
             Applied Scientist II
             <br />
@@ -91,14 +91,14 @@ export default function Home() {
 
         {/* News */}
         <div className="mt-8">
-          <h2 className="text-2xl font-medium mb-3">News</h2>
+          <h2 className="section-heading">News</h2>
           <table className="news-table w-full">
             <tbody>
               {news.filter((item) => item.show).map((item, i) => (
                 <tr key={i}>
-                  <th className="py-1">{item.date}</th>
+                  <th className="py-2">{item.date}</th>
                   <td
-                    className="py-1"
+                    className="py-2"
                     dangerouslySetInnerHTML={{ __html: item.content }}
                   />
                 </tr>
@@ -109,7 +109,7 @@ export default function Home() {
 
         {/* Selected Publications */}
         <div className="publications mt-8">
-          <h2 className="text-2xl font-medium mb-3">Selected publications</h2>
+          <h2 className="section-heading">Selected publications</h2>
           <ol className="list-none p-0">
             {selectedPubs.map((pub) => (
               <PublicationEntry key={pub.key} pub={pub} />

@@ -125,6 +125,10 @@ export function parsePublications(): Publication[] {
   return entries;
 }
 
+export function getAllPublications(): Publication[] {
+  return parsePublications();
+}
+
 export function getPublicationsByYear(): Record<string, Publication[]> {
   const pubs = parsePublications();
   const grouped: Record<string, Publication[]> = {};

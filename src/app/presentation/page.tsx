@@ -4,7 +4,7 @@ export default function PresentationPage() {
   return (
     <div>
       <header className="mb-6">
-        <h1 className="text-3xl font-light">Presentation</h1>
+        <h1 className="text-2xl font-semibold">Presentation</h1>
       </header>
 
       <article>
@@ -21,7 +21,7 @@ export default function PresentationPage() {
                   talk.title
                 )}
                 <div className="text-sm text-gray-600" style={{ listStyleType: "none" }}>
-                  {talk.date}, {talk.venue}
+                  <span className="font-mono">{talk.date}</span>, {talk.venue}
                   {talk.slides && (
                     <>
                       ,{" "}

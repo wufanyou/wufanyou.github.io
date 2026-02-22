@@ -21,13 +21,11 @@ export default function Navbar() {
   }
 
   return (
-    <nav
-      className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 bg-white/95"
-      style={{ opacity: 0.95 }}
-    >
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-gray-100 bg-white/80 backdrop-blur-md">
+      <div className="gradient-bar" />
       <div className="container-main flex items-center justify-between h-14">
         <Link href="/" className="navbar-brand text-black no-underline hover:no-underline text-lg">
-          <span className="font-bold">Fanyou</span> Wu | 吴凡优
+          <span className="font-semibold">Fanyou</span> Wu | 吴凡优
         </Link>
 
         {/* Mobile toggle */}
@@ -54,7 +52,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop nav */}
-        <ul className="hidden sm:flex gap-4 items-center">
+        <ul className="hidden sm:flex gap-6 items-center">
           {links.map((l) => (
             <li key={l.href}>
               <Link
@@ -72,7 +70,7 @@ export default function Navbar() {
 
       {/* Mobile nav */}
       {isOpen && (
-        <div className="sm:hidden border-t border-gray-200 bg-white">
+        <div className="sm:hidden border-t border-gray-100 bg-white/95 backdrop-blur-md">
           <ul className="flex flex-col items-end gap-2 p-4">
             {links.map((l) => (
               <li key={l.href}>
