@@ -61,14 +61,14 @@ export default function Home() {
           <p>
             Applied Scientist II
             <br />
-            PXT Central Science (PXTCS)
+            AMX Central Science (AMXCS)
             <br />
             Amazon
           </p>
 
           <p>
-            I am Fanyou Wu, and I am an Applied Scientist at Amazon PXT Central
-            Science (PXTCS). I received my Ph.D. degree in Forestry from{" "}
+            I am Fanyou Wu, and I am an Applied Scientist at Amazon AMX Central
+            Science (AMXCS). I received my Ph.D. degree in Forestry from{" "}
             <a href="https://fnr.purdue.edu/">
               Department of Forestry and Natural Resources, Purdue University
             </a>{" "}
