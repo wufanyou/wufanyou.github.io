@@ -21,7 +21,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-100/80 backdrop-blur-md border-b border-gray-200/50">
       <div className="gradient-bar" />
       <div className="container-main flex items-center justify-between h-14">
         <Link href="/" className="navbar-brand text-black no-underline hover:no-underline text-lg">
@@ -70,7 +70,7 @@ export default function Navbar() {
 
       {/* Mobile nav */}
       {isOpen && (
-        <div className="sm:hidden bg-white">
+        <div className="sm:hidden bg-gray-100/80 backdrop-blur-md">
           <ul className="flex flex-col items-end gap-2 p-4">
             {links.map((l) => (
               <li key={l.href}>

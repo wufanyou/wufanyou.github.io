@@ -1,11 +1,11 @@
-@import "tailwindcss";
+@import "../../node_modules/tailwindcss";
 
 :root {
   --global-theme-color: #0076df;
   --global-hover-color: #005bb5;
   --global-icon-color: #424242;
   --global-text-color: #1a1a1a;
-  --global-bg-color: #ffffff;
+  --global-bg-color: #f5f5f5;
   --font-inter: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
