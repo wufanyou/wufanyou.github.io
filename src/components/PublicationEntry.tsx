@@ -27,14 +27,14 @@ export default function PublicationEntry({ pub, year, isFirst }: { pub: Publicat
   const [showAbstract, setShowAbstract] = useState(false);
 
   return (
-    <li className={`mb-0.5 ${isFirst ? "border-t border-[#e8e8e8] mt-4 pt-4" : ""}`}>
+    <li className={`mb-0.5 ${isFirst ? "border-t border-[var(--global-border-color)] mt-4 pt-4" : ""}`}>
       <div className="pub-card">
         <div className="flex gap-2">
           <div className="w-10 text-center flex-shrink-0 flex items-start justify-center pt-1"><CategoryIcon category={pub.emoji} /></div>
           <div className="flex-1 min-w-0">
             <div className="pub-title">{pub.title}</div>
             <AuthorList authors={pub.authors} />
-            <div className="text-sm text-gray-600 italic">
+            <div className="text-sm italic" style={{ color: "var(--global-muted-text)" }}>
               {pub.venue} <span className="font-mono">{pub.year}</span>
             </div>
 
@@ -99,7 +99,7 @@ export default function PublicationEntry({ pub, year, isFirst }: { pub: Publicat
           </div>
           {year ? (
             <div className="w-12 text-center flex-shrink-0 flex items-start justify-center pt-1">
-              <span className="text-[#e8e8e8] font-bold text-lg">{year}</span>
+              <span className="text-[var(--global-border-color)] font-bold text-lg">{year}</span>
             </div>
           ) : (
             <div className="w-12 flex-shrink-0" />

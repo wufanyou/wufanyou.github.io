@@ -135,13 +135,13 @@ export default function PublicationPageClient({
         </header>
         <button
           onClick={() => setFiltersOpen(!filtersOpen)}
-          className="text-sm font-mono px-3 py-1.5 border border-gray-300 rounded-md hover:border-[var(--global-theme-color)] hover:text-[var(--global-theme-color)] transition-colors cursor-pointer"
+          className="text-sm font-mono px-3 py-1.5 border border-[var(--global-border-light)] rounded-md hover:border-[var(--global-theme-color)] hover:text-[var(--global-theme-color)] transition-colors cursor-pointer"
         >
           {filtersOpen ? "Hide filters" : "Show filters"}
           {hasActiveFilters && ` (${selectedYears.size + selectedDomains.size})`}
         </button>
         {filtersOpen && (
-          <div className="mt-3 p-3 border border-gray-200 rounded-md">
+          <div className="mt-3 p-3 border border-[var(--global-border-light)] rounded-md">
             {filterContent}
           </div>
         )}
@@ -168,7 +168,7 @@ export default function PublicationPageClient({
             ))}
 
             {filtered.length === 0 && (
-              <p className="text-gray-500 text-sm mt-4">
+              <p className="text-[var(--global-muted-text)] text-sm mt-4">
                 No publications match the selected filters.
               </p>
             )}

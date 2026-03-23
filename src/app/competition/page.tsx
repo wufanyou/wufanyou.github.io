@@ -31,7 +31,7 @@ export default function CompetitionPage() {
             return (
               <div key={year}>
                 {items.map((c, i) => (
-                  <div key={i} className={`pub-card mb-2 ${i === 0 ? "border-t border-[#e8e8e8] mt-4 pt-4" : ""}`}>
+                  <div key={i} className={`pub-card mb-2 ${i === 0 ? "border-t border-[var(--global-border-color)] mt-4 pt-4" : ""}`}>
                     <div className="flex items-center" style={{ gap: `${ICON_GAP}px` }}>
                       <div className="flex-shrink-0" style={{ width: `${ICON_SIZE}px`, height: `${ICON_SIZE}px` }}>
                         <CategoryIcon category={c.emoji} />
@@ -51,7 +51,7 @@ export default function CompetitionPage() {
                           {c.prize && <>, {c.prize}</>}
                           {c.solution_link && (
                             <>
-                              <span className="inline-block mx-2 border-l-2 border-gray-400 h-4 align-middle" />
+                              <span className="inline-block mx-2 border-l-2 border-[var(--global-muted-text)] h-4 align-middle" />
                               <a
                                 href={c.solution_link}
                                 target="_blank"
@@ -66,7 +66,7 @@ export default function CompetitionPage() {
                       </div>
                       {i === 0 ? (
                         <div className="w-12 text-center flex-shrink-0 flex items-center justify-center">
-                          <span className="text-[#e8e8e8] font-bold text-lg">{year}</span>
+                          <span className="text-[var(--global-border-color)] font-bold text-lg">{year}</span>
                         </div>
                       ) : (
                         <div className="w-12 flex-shrink-0" />

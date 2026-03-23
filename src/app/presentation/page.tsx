@@ -11,7 +11,7 @@ export default function PresentationPage() {
         <div className="publications">
           <ul className="list-disc pl-6 space-y-1">
             {presentations.talks.map((talk, i) => (
-              <li key={i} className={i === 0 ? "border-t border-[#e8e8e8] mt-4 pt-4" : ""}>
+              <li key={i} className={i === 0 ? "border-t border-[var(--global-border-color)] mt-4 pt-4" : ""}>
                 <div className="flex gap-2">
                   <div className="flex-1">
                     {talk.link ? (
@@ -21,7 +21,7 @@ export default function PresentationPage() {
                     ) : (
                       talk.title
                     )}
-                    <div className="text-sm text-gray-600">
+                    <div className="text-sm text-[var(--global-muted-text)]">
                       <span className="font-mono">{talk.date}</span>, {talk.venue}
                       {talk.slides && (
                         <>
@@ -43,7 +43,7 @@ export default function PresentationPage() {
                   </div>
                   {i === 0 ? (
                     <div className="w-16 text-center flex-shrink-0 flex items-center justify-center">
-                      <span className="text-[#e8e8e8] font-bold text-lg">Talks</span>
+                      <span className="text-[var(--global-border-color)] font-bold text-lg">Talks</span>
                     </div>
                   ) : (
                     <div className="w-16 flex-shrink-0" />
@@ -55,12 +55,12 @@ export default function PresentationPage() {
 
           <ul className="list-disc pl-6 space-y-1">
             {presentations.posters.map((poster, i) => (
-              <li key={i} className={i === 0 ? "border-t border-[#e8e8e8] mt-4 pt-4" : ""}>
+              <li key={i} className={i === 0 ? "border-t border-[var(--global-border-color)] mt-4 pt-4" : ""}>
                 <div className="flex gap-2">
                   <div className="flex-1">{poster}</div>
                   {i === 0 ? (
                     <div className="w-16 text-center flex-shrink-0 flex items-center justify-center">
-                      <span className="text-[#e8e8e8] font-bold text-lg">Posters</span>
+                      <span className="text-[var(--global-border-color)] font-bold text-lg">Posters</span>
                     </div>
                   ) : (
                     <div className="w-16 flex-shrink-0" />
