@@ -67,24 +67,31 @@ export default function Home() {
           </p>
 
           <p>
-            I am Fanyou Wu, and I am an Applied Scientist at Amazon ATACSE. I received my Ph.D. degree in Forestry from{" "}
-            <a href="https://fnr.purdue.edu/">
-              Department of Forestry and Natural Resources, Purdue University
-            </a>{" "}
-            (2021). Before attending Purdue, I received my master&apos;s degree from{" "}
-            <a href="https://www.uef.fi/en/etusivu">University of Eastern Finland</a>{" "}
-            (2018) and bachelor&apos;s degree from{" "}
-            <a href="http://eng.njfu.edu.cn">Nanjing Forestry University</a> (2015)
-            both in Wood Material Science. I was also an exchange student at the{" "}
-            <a href="https://www.ubc.ca/">University of British Columbia</a> (2013).
+            Applied Scientist and tech leader at Amazon working at the intersection of
+            large language models, reinforcement learning, and synthetic data.
           </p>
 
           <p>
-            My research focuses on applying machine learning to human resource area.
-            Attending machine learning related <a href="/competition">competitions</a>{" "}
-            is my side interests, and I have won many championships and runners-up in
-            machine learning related competitions and top conference competitions at
-            KDD, IJCAI, NeurIPS, and CVPR.
+            At Amazon ATACSE I build LLM systems end to end: an internal HR chatbot
+            combining retrieval-augmented generation (RAG) with an LLM agent, an audio
+            role-playing agent that simulates realistic conversations to coach HR
+            professionals, and a transformer-based job recommendation system trained on
+            large-scale click-stream data. Alongside production work, I research dialog
+            generation, hallucination, fairness, and role playing, with results
+            published at ACL, EMNLP, and COLM.
+          </p>
+
+          <p>
+            Earlier, I completed a PhD at{" "}
+            <a href="https://fnr.purdue.edu/">Purdue University</a> and built deep
+            learning systems for computer vision and reinforcement learning. I have a
+            strong <a href="/competition">competition</a> track record, with first- and
+            second-place finishes at KDD Cup, IJCAI, NeurIPS, and CVPR.
+          </p>
+
+          <p>
+            Interests: LLM agents, reinforcement learning, synthetic data and
+            environments, NLP, and applied ML research that ships to production.
           </p>
         </div>
 
