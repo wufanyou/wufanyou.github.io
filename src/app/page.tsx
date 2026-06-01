@@ -61,7 +61,7 @@ export default function Home() {
           <p>
             Applied Scientist II
             <br />
-            ATACSE
+            PXT ATACSE
             <br />
             Amazon
           </p>
@@ -72,7 +72,7 @@ export default function Home() {
           </p>
 
           <p>
-            At Amazon ATACSE I build LLM systems end to end: an internal HR chatbot
+            At Amazon PXT ATACSE I build LLM systems end to end: an internal HR chatbot
             combining retrieval-augmented generation (RAG) with an LLM agent, an audio
             role-playing agent that simulates realistic conversations to coach HR
             professionals, and a transformer-based job recommendation system trained on
