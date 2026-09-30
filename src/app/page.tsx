@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className="clearfix leading-relaxed space-y-4">
           <p>
-            Applied Scientist II
+            Applied Scientist, Tech Lead
             <br />
             PXT ITDS
             <br />
