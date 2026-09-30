@@ -61,7 +61,7 @@ export default function Home() {
           <p>
             Applied Scientist II
             <br />
-            PXT ATACSE
+            PXT ITDS
             <br />
             Amazon
           </p>
@@ -72,13 +72,15 @@ export default function Home() {
           </p>
 
           <p>
-            At Amazon PXT ATACSE I build LLM systems end to end: an internal HR chatbot
+            At Amazon PXT ITDS I build LLM systems end to end: an internal HR chatbot
             combining retrieval-augmented generation (RAG) with an LLM agent, an audio
             role-playing agent that simulates realistic conversations to coach HR
             professionals, and a transformer-based job recommendation system trained on
-            large-scale click-stream data. Alongside production work, I research dialog
-            generation, hallucination, fairness, and role playing, with results
-            published at ACL, EMNLP, and COLM.
+            large-scale click-stream data. I also drive the shift to an AI-native
+            software development lifecycle (SDLC), where LLM agents take part in every
+            stage from design through coding, testing, and deployment. Alongside
+            production work, I research dialog generation, hallucination, fairness, and
+            role playing, with results published at ACL, EMNLP, and COLM.
           </p>
 
           <p>
@@ -90,8 +92,8 @@ export default function Home() {
           </p>
 
           <p>
-            Interests: LLM agents, reinforcement learning, synthetic data and
-            environments, NLP, and applied ML research that ships to production.
+            Interests: LLM agents, AI-native SDLC, reinforcement learning, synthetic
+            data and environments, NLP, and applied ML research that ships to production.
           </p>
         </div>
 
