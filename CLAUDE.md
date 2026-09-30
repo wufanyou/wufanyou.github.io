@@ -14,6 +14,7 @@ npm run dev              # Start dev server
 npm run build            # Production build (next build → static export to out/)
 npm run lint             # ESLint (Next.js + TypeScript rules)
 ./scripts/deploy.sh      # Full deploy: build, push source to main, force-push static output to webpage branch
+npm run resume           # Render scripts/resume/resume.html to public/assets/pdf/Fanyou_Wu_Resume.pdf (first time: npx playwright install chromium)
 ```
 
 ## Architecture
@@ -30,6 +31,7 @@ npm run lint             # ESLint (Next.js + TypeScript rules)
 - `src/lib/` — BibTeX parser (`bibtex.ts`) and Google Scholar citation fetcher (`scholar.ts`)
 - `src/data/` — Content data files (publications.bib, competitions.json, presentations.json, news.json)
 - `scripts/` — Deploy script and pre-build citation fetcher
+- `scripts/resume/` — Full resume source (`resume.html`, hand-maintained) and its PDF build script
 - `public/assets/` — Static assets (images, PDFs)
 
 **Content pipeline:**
