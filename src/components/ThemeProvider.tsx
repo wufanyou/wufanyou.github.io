@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useSyncExternalStore } from "react";
 
 type Theme = "light" | "dark";
 
@@ -13,26 +13,35 @@ export function useTheme() {
   return useContext(ThemeContext);
 }
 
-export default function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("light");
-  const [mounted, setMounted] = useState(false);
+// Runs in <head> before first paint so the page never flashes the wrong theme.
+export const themeInitScript = `(function(){try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.classList.toggle("dark",t==="dark")}catch(e){}})()`;
 
-  useEffect(() => {
-    const stored = localStorage.getItem("theme") as Theme | null;
-    const initial = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    setTheme(initial);
-    document.documentElement.classList.toggle("dark", initial === "dark");
-    setMounted(true);
-  }, []);
+const listeners = new Set<() => void>();
+
+function subscribe(listener: () => void) {
+  listeners.add(listener);
+  return () => listeners.delete(listener);
+}
+
+function getSnapshot(): Theme {
+  return document.documentElement.classList.contains("dark") ? "dark" : "light";
+}
+
+function getServerSnapshot(): Theme {
+  return "light";
+}
+
+export default function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const theme = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
   function toggle() {
     const next = theme === "light" ? "dark" : "light";
-    setTheme(next);
-    localStorage.setItem("theme", next);
+    try {
+      localStorage.setItem("theme", next);
+    } catch {}
     document.documentElement.classList.toggle("dark", next === "dark");
+    listeners.forEach((l) => l());
   }
-
-  if (!mounted) return null;
 
   return (
     <ThemeContext.Provider value={{ theme, toggle }}>
